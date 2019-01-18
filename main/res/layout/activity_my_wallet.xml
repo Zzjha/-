@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyWalletActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginLeft="20dp"
+        android:background="@mipmap/group"
+        android:layout_marginRight="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_20"/>
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100.00"
+            android:textSize="@dimen/sp_36"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_20"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="消费金额"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="消费时间"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyInfoActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的收货地址"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:textSize="@dimen/sp_12"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_30"
+        android:text="新增收货地址"
+        android:background="@drawable/borderstyles"
+        android:textColor="#fff"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xrecy"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/addBtn"
+        android:layout_below="@+id/rl"
+        android:layout_marginBottom="@dimen/dp_20">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+</RelativeLayout>

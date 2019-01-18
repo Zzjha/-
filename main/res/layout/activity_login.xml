@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@mipmap/zcdl"
+    android:orientation="vertical">
+
+    <com.xw.repo.XEditText
+        android:id="@+id/tel_login"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginRight="@dimen/dp_36"
+        android:layout_height="wrap_content"
+        android:hint="手机号"
+        android:drawableLeft="@mipmap/login_icon_phone"
+        android:drawablePadding="@dimen/dp_10"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_150"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:theme="@style/EdittextColor"/>
+
+    <com.xw.repo.XEditText
+        android:id="@+id/pwd_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginRight="@dimen/dp_36"
+        android:layout_gravity="center"
+        android:drawableLeft="@mipmap/login_icon_lock"
+        android:drawablePadding="@dimen/dp_10"
+        android:hint="登录密码"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:theme="@style/EdittextColor"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/dp_30"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginRight="@dimen/dp_36"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_30">
+        <CheckBox
+            android:id="@+id/jizhumm_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码"
+            android:textColor="#fff"
+            android:layout_alignParentLeft="true"
+            android:theme="@style/CheckboxColor"/>
+        <TextView
+            android:id="@+id/kszhuce_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速注册"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_36"
+        android:layout_marginRight="@dimen/dp_36"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="#FF6A6A"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_100"
+        android:background="@drawable/yuanjiaoborder"/>
+
+</LinearLayout>
